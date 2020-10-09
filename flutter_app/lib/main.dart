@@ -18,16 +18,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.purple[300],
       ),
       body: Center(
-        child: Text(
-          'Hi nice to meet you!!!',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.black45,
-            fontFamily: 'DidactGothic',
-          ),
-        ),
+        child: Image.asset("assets/space1.jpg"),
+      ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
