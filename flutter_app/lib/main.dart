@@ -17,11 +17,22 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.purple[300],
       ),
-      body: Container(
-        padding:EdgeInsets.symmetric(horizontal:20, vertical:10),
-        margin: EdgeInsets.all(30),
-        color: Colors.grey[400],
-        child: Text('hello'),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget> [
+          Text(('hello, world')),
+          FlatButton(
+            onPressed: (){},
+            color:Colors.amber,
+            child:Text('clickme'),
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30),
+            child:Text('inside container'),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
